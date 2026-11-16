@@ -17,10 +17,10 @@ export default function Messages() {
             À ouvrir <em>sans modération</em>
           </>
         }
-        lead="Six enveloppes, six pensées posées là pour toi. Prends-en une, lis-la lentement, puis reviens quand tu veux."
+        lead="Trois enveloppes, trois pensées posées là pour toi. Prends-en une, lis-la lentement, puis reviens quand tu veux."
         aside={
           <div className="section-chip">
-            <span className="section-chip__num">06</span>
+            <span className="section-chip__num">03</span>
             <span>messages à ouvrir</span>
           </div>
         }

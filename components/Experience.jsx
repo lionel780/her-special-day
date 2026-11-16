@@ -13,6 +13,7 @@ import { readStored, removeStored, writeStored } from "@/lib/storage";
 const RESET_KEYS = [
   "hsd:unlocked",
   "hsd:visited",
+  "hsd:tutorial",
   "hsd:wishlist",
   "hsd:letter",
   "hsd:letter-saved",

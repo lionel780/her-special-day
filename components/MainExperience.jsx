@@ -7,11 +7,9 @@ import FinalGiftModal from "./FinalGiftModal";
 import Hub from "./Hub";
 import Icon from "./Icons";
 import LetterToMyself from "./LetterToMyself";
-import Memories from "./Memories";
 import Messages from "./Messages";
 import NewChapter from "./NewChapter";
 import SoundToggle from "./SoundToggle";
-import Soundtrack from "./Soundtrack";
 import Surprises from "./Surprises";
 import Wishlist from "./Wishlist";
 
@@ -19,10 +17,8 @@ const NAV = [
   { id: "hub", label: "Accueil" },
   { id: "messages", label: "Des mots" },
   { id: "letter", label: "Lettre" },
-  { id: "wishlist", label: "Envies" },
-  { id: "memories", label: "Souvenirs" },
+  { id: "wishlist", label: "Wishlist" },
   { id: "chapter", label: "Chapitre" },
-  { id: "soundtrack", label: "Ambiance" },
   { id: "surprises", label: "Surprises" }
 ];
 
@@ -76,12 +72,8 @@ export default function MainExperience({ ambient, onReset }) {
         return <LetterToMyself />;
       case "wishlist":
         return <Wishlist />;
-      case "memories":
-        return <Memories />;
       case "chapter":
         return <NewChapter />;
-      case "soundtrack":
-        return <Soundtrack ambient={ambient} />;
       case "surprises":
         return <Surprises />;
       default:

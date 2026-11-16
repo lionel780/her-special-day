@@ -80,6 +80,21 @@ export default function BirthdayReveal({ onContinue }) {
         <button className="btn btn--light reveal-screen__cta" type="button" onClick={onContinue}>
           Découvrir ma surprise <Icon name="arrow" size={16} />
         </button>
+
+        <div className="reveal-screen__song">
+          <p className="reveal-screen__song-label">
+            <Icon name="music" size={14} /> Happy Birthday · Naza
+          </p>
+          <div className="reveal-screen__song-frame">
+            <iframe
+              src="https://www.youtube.com/embed/dNEnzdcnWzE?autoplay=1&rel=0&modestbranding=1&playsinline=1"
+              title="Happy Birthday — Naza"
+              allow="autoplay; encrypted-media; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
+        </div>
       </div>
 
       <p className="reveal-screen__foot" aria-hidden="true">

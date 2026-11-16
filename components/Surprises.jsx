@@ -56,6 +56,7 @@ function SelfQuiz() {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState([]);
   const [result, setResult] = useState(null);
+  const [summary, setSummary] = useState([]);
 
   function choose(trait) {
     if (result) return;
@@ -66,8 +67,16 @@ function SelfQuiz() {
         accumulator[value] = (accumulator[value] || 0) + 1;
         return accumulator;
       }, {});
-      const winner = Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0];
+      const ranked = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+      const winner = ranked[0][0];
       setResult(quizResults[winner]);
+      setSummary(
+        ranked.map(([trait, count]) => ({
+          id: trait,
+          name: quizResults[trait].title,
+          count
+        }))
+      );
       celebrate({ count: 38, spread: 0.7 });
     } else {
       setStep((value) => value + 1);
@@ -78,6 +87,7 @@ function SelfQuiz() {
     setStep(0);
     setAnswers([]);
     setResult(null);
+    setSummary([]);
   }
 
   const current = quiz[step];
@@ -95,6 +105,13 @@ function SelfQuiz() {
           <p className="quiz-result__eyebrow">{result.label}</p>
           <p className="quiz-result__title">{result.title}</p>
           <p className="quiz-result__text">{result.text}</p>
+          <div className="quiz-result__choices">
+            {summary.map((item) => (
+              <span className={`quiz-result__trait quiz-result__trait--${item.id}`} key={item.id}>
+                {item.name} <strong>{item.count}</strong>
+              </span>
+            ))}
+          </div>
           <button type="button" className="btn btn--ghost btn--small" onClick={restart}>
             Rejouer le quiz <Icon name="arrow" size={14} />
           </button>
@@ -229,7 +246,7 @@ export default function Surprises() {
   return (
     <section className="view">
       <SectionIntro
-        eyebrow="07 — Petites surprises"
+        eyebrow="05 — Petites surprises"
         title={
           <>
             Trois façons de <em>jouer un peu</em>

@@ -2,6 +2,7 @@
 
 import { config, doors } from "@/data/content";
 import Icon from "./Icons";
+import NavigationTutorial from "./NavigationTutorial";
 
 export default function Hub({ visited, onNavigate, onOpenGift }) {
   return (
@@ -29,7 +30,7 @@ export default function Hub({ visited, onNavigate, onOpenGift }) {
             <em>{config.name}</em>
           </h1>
           <p className="hub-hero__lead">
-            Sept petites portes, un dernier cadeau, et tout le temps qu&apos;il te faut.
+            Cinq petites portes, un dernier cadeau, et tout le temps qu&apos;il te faut.
             Prends le parcours comme une promenade : rien ne presse.
           </p>
           <div className="hub-hero__meta">
@@ -42,6 +43,8 @@ export default function Hub({ visited, onNavigate, onOpenGift }) {
           </button>
         </div>
       </div>
+
+      <NavigationTutorial />
 
       <div className="doors-head">
         <div>

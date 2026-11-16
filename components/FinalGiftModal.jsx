@@ -62,18 +62,21 @@ export default function FinalGiftModal({ open, onClose }) {
 
         <div className="final-modal__letter">
           <p>
-            Si tu es arrivée jusqu&apos;ici, sache que cette petite expérience a été pensée
-            spécialement pour toi. Chaque mot, chaque détail, chaque étoile : tout était
-            une façon de te dire ce que les mots du quotidien oublient parfois.
+            Les années précédentes n’ont pas toujours été synonymes de bonheur à l’approche
+            de ton anniversaire. Mais cette année, j’ai bien envie qu’elle soit particulière.
           </p>
           <p>
-            Que cette nouvelle année soit remplie de belles choses. De celles qui te
-            ressemblent, qui te font grandir sans te presser, qui te rappellent que tu es
-            déjà quelqu&apos;un de rare.
+            Je te souhaite un anniversaire merveilleux, rempli d’amour, de belles surprises et
+            de moments inoubliables.
           </p>
           <p>
-            Tu mérites de vivre de magnifiques moments, {config.name}. Et j&apos;espère que
-            cette année t&apos;en offrira beaucoup. Happy Birthday.
+            À toi, cette créatrice de contenu et passionnée. Tu caches une personne sensible,
+            généreuse et profondément attachée au bonheur des autres. Une belle âme qui aime
+            donner, aider et faire du bien autour d’elle.
+          </p>
+          <p>
+            Ne perds jamais cette belle partie de toi. Tu mérites aussi de recevoir tout le
+            bonheur que tu distribues autour de toi.
           </p>
         </div>
 

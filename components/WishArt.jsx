@@ -10,7 +10,14 @@ const ART_ICONS = {
   serum: "serum",
   book: "book",
   concert: "concert",
-  palette: "palette"
+  palette: "palette",
+  money: "money",
+  gloss: "gloss",
+  slippers: "slippers",
+  cupcake: "cupcake",
+  candy: "candy",
+  chips: "chips",
+  microphone: "microphone"
 };
 
 export default function WishArt({ art, tone = "blush" }) {

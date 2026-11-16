@@ -40,7 +40,7 @@ export default function NewChapter() {
   return (
     <section className="view">
       <SectionIntro
-        eyebrow="05 — Nouveau chapitre"
+        eyebrow="04 — Nouveau chapitre"
         title={
           <>
             A new chapter <em>begins</em>

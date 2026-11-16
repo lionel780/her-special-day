@@ -221,6 +221,59 @@ export default function Icon({ name, size = 24, strokeWidth = 1.4, ...rest }) {
           <circle cx="7.8" cy="13.2" r=".9" fill="currentColor" stroke="none" />
         </svg>
       );
+    case "money":
+      return (
+        <svg {...common}>
+          <rect x="2.8" y="6.4" width="18.4" height="11.2" rx="2.2" />
+          <circle cx="12" cy="12" r="2.8" />
+          <path d="M6 9.6h.01M18 14.4h.01" strokeWidth="2.4" />
+        </svg>
+      );
+    case "gloss":
+      return (
+        <svg {...common}>
+          <rect x="9" y="9.8" width="6" height="9.2" rx="1.8" />
+          <path d="M10.4 9.8V7h3.2v2.8M12 3.2V7M10.2 13.4h3.6" />
+        </svg>
+      );
+    case "slippers":
+      return (
+        <svg {...common}>
+          <path d="M4 16.5h15.4a1.5 1.5 0 0 0 1.4-2l-.6-1.7a2 2 0 0 0-1.4-1.2l-3.2-.8a3 3 0 0 1-1.3-.8l-1.1-1.1a1.8 1.8 0 0 0-2.6 0l-.6.6c-.7.8-1.6 1.3-2.6 1.5l-2.7.7A2 2 0 0 0 3 13.5v1.5A1.5 1.5 0 0 0 4 16.5Z" />
+          <path d="M4 16.5V19h14.5v-2.5" opacity=".45" />
+        </svg>
+      );
+    case "cupcake":
+      return (
+        <svg {...common}>
+          <path d="M6 12.6h12l-1.4 6.5a2 2 0 0 1-2 1.6H9.4a2 2 0 0 1-2-1.6L6 12.6Z" />
+          <path d="M4.6 12.6h14.8" />
+          <path d="M8 12.6c-.8-1.2-.4-2.6.7-3.1-.2-1.2.7-2.3 1.9-2.3.4-1 1.7-1.4 2.6-.8.9-.6 2.2-.1 2.5.9 1.2 0 2 1.1 1.7 2.2 1 .6 1.3 1.9.6 3.1" />
+          <path d="M10.3 16.3h.01M13.7 16.3h.01" strokeWidth="2.2" />
+        </svg>
+      );
+    case "candy":
+      return (
+        <svg {...common}>
+          <circle cx="12" cy="12" r="3.7" />
+          <path d="m8.7 9.4-3.2-1.7a.7.7 0 0 0-1 .8l1 3.1M15.3 14.6l3.2 1.7a.7.7 0 0 0 1-.8l-1-3.1" />
+        </svg>
+      );
+    case "chips":
+      return (
+        <svg {...common}>
+          <path d="M7 4.6h10l1.3 13.9a1.5 1.5 0 0 1-1.5 1.6H7.2a1.5 1.5 0 0 1-1.5-1.6L7 4.6Z" />
+          <path d="m6.9 8.2 1.6-1.1 1.7 1.1 1.8-1.1 1.8 1.1 1.7-1.1 1.6 1.1" />
+          <path d="M9.3 12.4c.9.7 1.8.7 2.7 0 .9.7 1.8.7 2.7 0" opacity=".55" />
+        </svg>
+      );
+    case "microphone":
+      return (
+        <svg {...common}>
+          <rect x="9" y="3.2" width="6" height="10.4" rx="3" />
+          <path d="M6.2 11.4a5.8 5.8 0 0 0 11.6 0M12 17.2v3.6M9.2 20.8h5.6" />
+        </svg>
+      );
     default:
       return (
         <svg {...common}>

@@ -33,29 +33,29 @@ export default function Wishlist() {
         count: 22,
         spread: 0.6
       });
-      toast("Ajouté à tes envies ✦");
+      toast("Ajouté à ta wishlist ✦");
     }
   }
 
   return (
     <section className="view">
       <SectionIntro
-        eyebrow="03 — Mes envies"
+        eyebrow="03 — Ma wishlist"
         title={
           <>
-            Des envies, <em>pas des besoins</em>
+            Ma wishlist, <em>pas des besoins</em>
           </>
         }
-        lead="Dix petites idées pour te faire plaisir, te surprendre ou simplement te ressembler. Garde celles qui te parlent : le cœur remplace le panier."
+        lead="Onze petites idées pour te faire plaisir, te surprendre ou simplement te ressembler. Garde celles qui te parlent : le cœur remplace le panier."
         aside={
           <div className="section-chip">
             <span className="section-chip__num">{String(saved.length).padStart(2, "0")}</span>
-            <span>envies gardées</span>
+            <span>dans ta wishlist</span>
           </div>
         }
       />
 
-      <div className="wish-filters" role="group" aria-label="Filtrer les envies par catégorie">
+      <div className="wish-filters" role="group" aria-label="Filtrer la wishlist par catégorie">
         {wishCategories.map((category) => (
           <button
             key={category}
@@ -86,7 +86,7 @@ export default function Wishlist() {
                     className={`wish-card__love${isSaved ? " is-saved" : ""}`}
                     onClick={(event) => toggleWish(wish, event)}
                     aria-pressed={isSaved}
-                    aria-label={`${isSaved ? "Retirer" : "Ajouter"} ${wish.title} ${isSaved ? "des" : "aux"} envies`}
+                    aria-label={`${isSaved ? "Retirer" : "Ajouter"} ${wish.title} ${isSaved ? "de la" : "à la"} wishlist`}
                   >
                     <Icon name="heart" size={14} />
                     <span>{isSaved ? "Gardée" : "C'est mon rêve"}</span>

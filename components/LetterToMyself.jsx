@@ -71,7 +71,7 @@ export default function LetterToMyself() {
         lead="Une lettre de celle que tu étais, puis une page blanche pour celle que tu deviens. Personne d'autre que toi ne lira ces mots."
         aside={
           <div className="section-chip">
-            <span className="section-chip__num">23</span>
+            <span className="section-chip__num">21</span>
             <span>le chapitre qui commence</span>
           </div>
         }
@@ -101,9 +101,9 @@ export default function LetterToMyself() {
                 <span className="eyebrow__line" />
                 Une lettre du passé
               </p>
-              <h3 className="keepsake__paper-title">{pastLetter.title}</h3>
+              <h1 className="keepsake__paper-title">{pastLetter.title}</h1>
               {pastLetter.paragraphs.map((paragraph) => (
-                <p key={paragraph.slice(0, 28)}>{paragraph}</p>
+                <p key={paragraph.slice(0, 18)}>{paragraph}</p>
               ))}
               <p className="keepsake__sign">{pastLetter.sign}</p>
               <button

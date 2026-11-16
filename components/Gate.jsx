@@ -32,7 +32,7 @@ export default function Gate({ onUnlock }) {
       setError("Un chiffre, juste un chiffre. Promis, rien de plus.");
       return;
     }
-    if (parsed === config.age) {
+    if (parsed === config.age || parsed === config.currentAge) {
       setError("");
       setSuccess(true);
       celebrate({ count: 90, y: window.innerHeight * 0.42 });
@@ -93,7 +93,7 @@ export default function Gate({ onUnlock }) {
                   setAge(event.target.value.replace(/[^0-9]/g, ""));
                   setError("");
                 }}
-                placeholder="22"
+                placeholder={String(config.currentAge)}
                 aria-describedby="age-hint age-error"
                 aria-invalid={Boolean(error)}
                 disabled={success}
