@@ -1,8 +1,8 @@
 export const config = {
   name: "Marie Michelle",
   fullName: "Marie Eyenga",
-  age: 20,
-  currentAge: 20,
+  age: 21,
+  currentAge: 21,
   birthday: "2026-11-23",
   signature: "M",
   edition: "Édition 2026",
@@ -214,7 +214,7 @@ export const wishCategories = [
 ];
 
 export const chapter = {
-  eyebrow: "Chapitre 22",
+  eyebrow: "Chapitre 21",
   title: "A new chapter begins",
   lead: "Une année de plus, ce n'est pas une page qui se tourne. C'est un cahier tout neuf, avec de la place pour ce qui compte vraiment.",
   goals: [

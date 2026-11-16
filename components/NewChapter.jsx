@@ -50,7 +50,7 @@ export default function NewChapter() {
         aside={
           <div className="chapter-badge">
             <span className="chapter-badge__small">Chapitre</span>
-            <span className="chapter-badge__num">{config.age + 1}</span>
+            <span className="chapter-badge__num">{config.age }</span>
             <span className="chapter-badge__small">une année à écrire</span>
           </div>
         }
