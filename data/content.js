@@ -64,7 +64,7 @@ export const messages = [
     number: "01",
     label: "Joyeux anniversaire",
     title: "Aujourd'hui, c'est ton jour",
-    text: "Aujourd'hui, on ne compte pas les années. On compte les raisons de se réjouir, les fous rires, les élans, les petits matins lumineux. Et tu en es une, immense raison. Que cette journée te rende un peu de toute la douceur que tu offres autour de toi.",
+    text: "C’est vrai qu’on ne se connaît pas encore beaucoup, mais à travers nos quelques échanges, j’ai eu l’impression de me reconnaître un peu dans ton histoire. Au-delà de nos prénoms qui se ressemblent, je trouve qu’on a quelques points en commun. Et je ne sais pas pourquoi, mais je me dis que ce n’est peut-être pas un simple hasard. Alors, j’ai voulu avoir une petite attention particulière pour toi. J’ai cherché un moyen de te faire sourire en ce jour et j’ai finalement pensé à faire ceci. j’aimerais vraiment que tu prennes le temps de lire chaque mot. J’y ai mis un peu de temps, de réflexion et surtout une intention sincère. Bon, je n’ai malheureusement pas trouvé de livreur de chips 😹😹, mais j’espère que cette petite attention te fera plaisir.",
     sign: "Pour toi, toujours"
   },
   {
@@ -107,7 +107,7 @@ export const wishlist = [
   {
     id: "money",
     category: "Petits plaisirs",
-    title: "Un peu d'argent",
+    title: "money money money ",
     description: "Pour t'offrir ce dont tu as envie, sans avoir à te justifier.",
     price: "250 000 FCFA",
     art: "money",
@@ -116,7 +116,7 @@ export const wishlist = [
   {
     id: "bag",
     category: "Mode",
-    title: "Le sac qui suit partout",
+    title: "Un Sac coach ",
     description: "Assez grand pour la vie, assez joli pour les beaux jours.",
     price: "20 000 FCFA",
     art: "bag",
@@ -134,7 +134,7 @@ export const wishlist = [
   {
     id: "slippers",
     category: "Mode",
-    title: "Des babouches pour la maison",
+    title: "Babouches Hermes",
     description: "Pour marcher doucement, chez toi, sans jamais te presser.",
     price: "12 000 FCFA",
     art: "slippers",
@@ -170,7 +170,7 @@ export const wishlist = [
   {
     id: "chips",
     category: "Petits plaisirs",
-    title: "Des chips pour les soirées",
+    title: "Des chips pour les soirées (beaucoup de chips)",
     description: "Le paquet qu'on ouvre sans y penser, et qu'on finit sans regret.",
     price: "3 000 FCFA",
     art: "chips",
@@ -188,7 +188,7 @@ export const wishlist = [
   {
     id: "microphone",
     category: "Technologie",
-    title: "Un micro pour ta voix",
+    title: "Un micro pour tes vlogs",
     description: "Parce que tes mots méritent d'être entendus, clairement.",
     price: "45 000 FCFA",
     art: "microphone",

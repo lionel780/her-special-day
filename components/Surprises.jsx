@@ -92,61 +92,61 @@ function SelfQuiz() {
 
   const current = quiz[step];
 
-  return (
-    <article className="surprise-card quiz-card">
-      <div className="surprise-card__head">
-        <span className="surprise-card__icon"><Icon name="quiz" size={22} /></span>
-        <span className="surprise-card__index">02</span>
-      </div>
-      <h3 className="surprise-card__title">Te connais-tu si bien ?</h3>
+  // return (
+  //   <article className="surprise-card quiz-card">
+  //     <div className="surprise-card__head">
+  //       <span className="surprise-card__icon"><Icon name="quiz" size={22} /></span>
+  //       <span className="surprise-card__index">02</span>
+  //     </div>
+  //     <h3 className="surprise-card__title">Te connais-tu si bien ?</h3>
 
-      {result ? (
-        <div className="quiz-result">
-          <p className="quiz-result__eyebrow">{result.label}</p>
-          <p className="quiz-result__title">{result.title}</p>
-          <p className="quiz-result__text">{result.text}</p>
-          <div className="quiz-result__choices">
-            {summary.map((item) => (
-              <span className={`quiz-result__trait quiz-result__trait--${item.id}`} key={item.id}>
-                {item.name} <strong>{item.count}</strong>
-              </span>
-            ))}
-          </div>
-          <button type="button" className="btn btn--ghost btn--small" onClick={restart}>
-            Rejouer le quiz <Icon name="arrow" size={14} />
-          </button>
-        </div>
-      ) : (
-        <div className="quiz-body">
-          <div className="quiz-progress" aria-hidden="true">
-            {quiz.map((item, index) => (
-              <span
-                key={item.question}
-                className={index <= step ? "is-active" : ""}
-              />
-            ))}
-          </div>
-          <p className="quiz-body__count" aria-live="polite">
-            Question {step + 1} sur {quiz.length}
-          </p>
-          <p className="quiz-body__question">{current.question}</p>
-          <div className="quiz-options">
-            {current.options.map((option) => (
-              <button
-                type="button"
-                className="quiz-option"
-                key={option.label}
-                onClick={() => choose(option.trait)}
-              >
-                <span>{option.label}</span>
-                <Icon name="arrow" size={14} />
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
-    </article>
-  );
+  //     {result ? (
+  //       <div className="quiz-result">
+  //         <p className="quiz-result__eyebrow">{result.label}</p>
+  //         <p className="quiz-result__title">{result.title}</p>
+  //         <p className="quiz-result__text">{result.text}</p>
+  //         <div className="quiz-result__choices">
+  //           {summary.map((item) => (
+  //             <span className={`quiz-result__trait quiz-result__trait--${item.id}`} key={item.id}>
+  //               {item.name} <strong>{item.count}</strong>
+  //             </span>
+  //           ))}
+  //         </div>
+  //         <button type="button" className="btn btn--ghost btn--small" onClick={restart}>
+  //           Rejouer le quiz <Icon name="arrow" size={14} />
+  //         </button>
+  //       </div>
+  //     ) : (
+  //       <div className="quiz-body">
+  //         <div className="quiz-progress" aria-hidden="true">
+  //           {quiz.map((item, index) => (
+  //             <span
+  //               key={item.question}
+  //               className={index <= step ? "is-active" : ""}
+  //             />
+  //           ))}
+  //         </div>
+  //         <p className="quiz-body__count" aria-live="polite">
+  //           Question {step + 1} sur {quiz.length}
+  //         </p>
+  //         <p className="quiz-body__question">{current.question}</p>
+  //         <div className="quiz-options">
+  //           {current.options.map((option) => (
+  //             <button
+  //               type="button"
+  //               className="quiz-option"
+  //               key={option.label}
+  //               onClick={() => choose(option.trait)}
+  //             >
+  //               <span>{option.label}</span>
+  //               <Icon name="arrow" size={14} />
+  //             </button>
+  //           ))}
+  //         </div>
+  //       </div>
+  //     )}
+  //   </article>
+  // );
 }
 
 function Countdown() {
@@ -193,7 +193,7 @@ function Countdown() {
     <article className="surprise-card countdown-card">
       <div className="surprise-card__head">
         <span className="surprise-card__icon"><Icon name="calendar" size={22} /></span>
-        <span className="surprise-card__index">03</span>
+        {/* <span className="surprise-card__index">03</span> */}
       </div>
       <h3 className="surprise-card__title">Le prochain jour</h3>
 
@@ -255,7 +255,7 @@ export default function Surprises() {
         lead="Un bocal à vœux, un quiz sans mauvaise réponse et un compte à rebours. Rien de sérieux : juste de quoi sourire."
         aside={
           <div className="section-chip">
-            <span className="section-chip__num">03</span>
+            <span className="section-chip__num">01</span>
             <span>petites attentions</span>
           </div>
         }

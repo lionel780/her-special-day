@@ -150,7 +150,7 @@ export default function LetterToMyself() {
             className="letter-editor__textarea"
             value={letter}
             onChange={(event) => setLetter(event.target.value)}
-            placeholder="Ma chérie, cette année, je te souhaite…"
+            placeholder="A Moi-même, cette année, je te souhaite…"
             rows={12}
           />
 
