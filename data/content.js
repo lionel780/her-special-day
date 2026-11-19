@@ -65,7 +65,7 @@ export const messages = [
     label: "Joyeux anniversaire",
     title: "Aujourd'hui, c'est ton jour",
     text: "C’est vrai qu’on ne se connaît pas encore beaucoup, mais à travers nos quelques échanges, j’ai eu l’impression de me reconnaître un peu dans ton histoire. Au-delà de nos prénoms qui se ressemblent, je trouve qu’on a quelques points en commun. Et je ne sais pas pourquoi, mais je me dis que ce n’est peut-être pas un simple hasard. Alors, j’ai voulu avoir une petite attention particulière pour toi. J’ai cherché un moyen de te faire sourire en ce jour et j’ai finalement pensé à faire ceci. j’aimerais vraiment que tu prennes le temps de lire chaque mot. J’y ai mis un peu de temps, de réflexion et surtout une intention sincère. Bon, je n’ai malheureusement pas trouvé de livreur de chips 😹😹, mais j’espère que cette petite attention te fera plaisir.",
-    sign: "Pour toi, toujours"
+    sign: "Happy birthday!"
   },
   {
     id: "personality",
@@ -78,7 +78,7 @@ export const messages = [
   {
     id: "funny",
     number: "03",
-    label: "Juste pour rire",
+    label: "C’est en forçant qu’on devient créateur de contenu ",
     title: "Officiellement une légende",
     text: "Je te confirme : tu viens encore de gagner une année d'expérience, de charisme et de droits à la sieste sans justification. Le comité a délibéré, c'est validé. Aucun recours possible. Joyeux anniversaire, majesté.",
     sign: "Le comité des grandes personnes"
