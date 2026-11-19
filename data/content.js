@@ -78,10 +78,10 @@ export const messages = [
   {
     id: "funny",
     number: "03",
-    label: "C’est en forçant qu’on devient créateur de contenu ",
-    title: "Officiellement une légende",
-    text: "Je te confirme : tu viens encore de gagner une année d'expérience, de charisme et de droits à la sieste sans justification. Le comité a délibéré, c'est validé. Aucun recours possible. Joyeux anniversaire, majesté.",
-    sign: "Le comité des grandes personnes"
+    label: "Juste pour rire",
+    title: "...",
+    text: "C’est en forçant qu’on devient créateur de contenu",
+    sign: "un truc comme ça "
   }
 ];
 
